@@ -17,25 +17,24 @@ public class jFarming {
 
 
     public static void main(String[] args) {
-        Herbs herb = new Herbs("Ranarr", 2323, 0, 32, 0);
 
-        herb.collected(1200);
-        double total = herb.finalPrice();
-
-        //test objects nested classes
-        Validate.Level testing = new Validate.Level();
-
-        //part of above test
-        int test = testing.returnLevel(herb.getSeedPrice());
+        //creates objects
+        Type herb1 = new Type(4, "Ranarr");
+        Type type1 = new Type(2, "Magic Tree");
+        Type tree = new Type(3, "Papaya");
 
         //prints test object
         System.out.println(title + version);
         System.out.println('\n');
 
+        //TESTING
+        System.out.println("Class: " + herb1.returnType() + " Name : " + herb1.returnName());
+        System.out.println('\n');
 
-        System.out.println("Currently have a : " + herb.getHerbName() + " Which costs : " + herb.getSeedPrice() + " And you collected : " + herb.getCollected());
-        System.out.println("For a grand total : " + total + "\n");
-        System.out.println("testing something " + test);
+        // MORE TESTING
+        tree.printArray();
+        type1.printArray();
+        herb1.printArray();
 
 
     }
