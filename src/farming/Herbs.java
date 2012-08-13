@@ -13,14 +13,12 @@ public class Herbs extends Validate {
     private String name;
 
 
-    //Herb subclass constructor
-    public Herbs(String herbType, int seedPrice, int collected, int farmLevel, int total) {
+    public Herb(String herbType, int seedPrice, int collected, int farmLevel, int total) {
         super(seedPrice, collected, farmLevel, total);
         this.name = herbType;
     }
 
-    public String getHerbName() {
-        return name;
-    }
+}
+
 
 }
